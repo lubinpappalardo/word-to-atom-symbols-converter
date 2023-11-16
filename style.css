@@ -1,0 +1,29 @@
+#result {
+    display: flex;
+    gap: 5px;
+}
+
+.element {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    overflow: hidden;
+    
+    & .element-name {
+        position: absolute;
+        bottom: 0;
+        font-size: 12px;
+    }
+
+    & .element-number {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        font-size: 16px;
+    }
+}
